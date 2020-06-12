@@ -2,16 +2,16 @@ import smtplib, ssl
 
 port = 465  # For SSL
 smtp_server = "smtp.gmail.com"
-sender_email = "userfortest0123456789@gmail.com"  # Enter your address
-receiver_email = "christianrmoran86@gmail.com"  # Enter receiver address
-password = "ThisIsThePassword0123456789"
+sender_email = "Enter sender email address"
+receiver_email = "Enter receiver email address"
+password = "Password of sender email"
 message = """\
 Subject: Message from Python script
 
 Hi there!
 
 This message is sent from Python script.
-You can see the code in github.com/chrisrm86.
+You can see more code in github.com/chrisrm86.
 
 Bye!
 """

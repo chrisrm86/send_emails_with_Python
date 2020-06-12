@@ -3,9 +3,9 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 
-sender_email = "userfortest0123456789@gmail.com"  # Enter your address
-receiver_email = "christianrmoran86@gmail.com"  # Enter receiver address
-password = "ThisIsThePassword0123456789"
+sender_email = "Enter sender email address"
+receiver_email = "Enter receiver email address"
+password = "Password of sender email"
 
 message = MIMEMultipart("alternative")
 message["Subject"] = "multipart test"
@@ -16,15 +16,14 @@ message["To"] = receiver_email
 text = """\
 Hi,
 How are you?
-Real Python has many great tutorials:
-www.realpython.com"""
+This is the text version of the content"""
 html = """\
 <html>
   <body>
     <p>Hi,<br>
        How are you?<br>
-       <a href="http://www.realpython.com">Real Python</a> 
-       has many great tutorials.
+       This is the HTML version of the content<br>
+       More code in <a href="https://github.com/chrisrm86">Github</a>
     </p>
   </body>
 </html>

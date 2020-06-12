@@ -6,9 +6,9 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
-sender_email = "userfortest0123456789@gmail.com"  # Enter your address
-receiver_email = "christianrmoran86@gmail.com"  # Enter receiver address
-password = "ThisIsThePassword0123456789"
+sender_email = "Enter your sender email address"
+receiver_email = "Enter your receiver email address"
+password = "Enter password of sender email"
 
 subject = "An email with attachment from Python"
 body = "This is an email with attachment sent from Python"
@@ -24,7 +24,7 @@ message["Bcc"] = receiver_email  # Recommended for mass emails
 # Add body to email
 message.attach(MIMEText(body, "plain"))
 
-filename = "The pragmatic programmer.pdf"  # In same directory as script
+filename = "Hello World.pdf"  # In same directory as script
 
 # Open PDF file in binary mode
 with open(filename, "rb") as attachment:
