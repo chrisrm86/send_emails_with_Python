@@ -1,2 +1,1 @@
-# email_sender
-Email sender script made with Python
+# send_emails_with_Python
